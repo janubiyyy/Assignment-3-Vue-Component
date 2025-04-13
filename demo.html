@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test Greeter Component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="my-component"></div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+    <script src="./dist/compiled-greeter-component.umd.js"></script>
+
+    <script>
+      Greeter.init("#my-component", {
+        message: "Hello from the host app!",
+        buttonLabel: "Say Hello",
+      });
+    </script>
+  </body>
+</html>
