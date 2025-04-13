@@ -10,17 +10,14 @@
     <div id="my-component"></div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-    <script src="./compiled-greeter-component.umd.js"></script>
+
+    <script src="../dist/compiled-greeter-component.umd.js"></script>
 
     <script>
-      if (typeof Greeter === "undefined") {
-        console.error("Greeter is not defined");
-      } else {
-        Greeter.init("#my-component", {
-          message: "Hello from the host app!",
-          buttonLabel: "Say Hello"
-        });
-      }
+      Greeter.init("#my-component", {
+        message: "Hello from the host app!",
+        buttonLabel: "Say Hello",
+      });
     </script>
   </body>
 </html>
